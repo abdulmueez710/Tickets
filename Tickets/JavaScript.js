@@ -105,7 +105,9 @@ function confirmReservation() {
     }
 
     resultDisplay.innerText = "You reserved seats: " + selectedSeats.join(", ");
-    payment();
+    setTimeout(function () {
+        payment();
+    }, 2000);
 }
 
 function payment() {

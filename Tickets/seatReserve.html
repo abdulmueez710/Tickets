@@ -58,6 +58,13 @@
             border-radius: 4px;
             cursor: pointer;
             transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            user-select: none;
         }
 
             .seat:hover {
@@ -74,7 +81,7 @@
             }
 
     .button {
-        margin-left : 36%;
+        margin : 0 40%;
     }
 
         .btn {
@@ -96,6 +103,7 @@
             font-size: 18px;
             color: #333;
             font-weight: bold;
+            text-align : center;
         }
 
         
@@ -238,7 +246,7 @@
 
         <div class="seats" id="seatContainer"></div>
   <div class="button">
-        <button class="btn" onclick="confirmReservation()">Confirm Reservation</button>
+        <button class="btn" onclick="confirmReservation()">Proceed to Payment</button>
 
         <div id="result" class="result"></div><br />
   </div>
