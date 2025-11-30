@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="StyleSheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="logo"><a href="Home.html">Tickets</a></span>
+
+        <ul class="navlist">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="eventList.html">Events</a></li>
+            <li><a href="addEvent.html">Add Event</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="Search events..." />
+
+        <div id="list" class="fa-solid fa-list">
+            <div class="dropdown">
+                <a href="Profile.html">Profile</a>
+                <a href="#">Setting</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>Add New Event</h1>
+
+        <div class="form-group">
+            <label>Event Name</label>
+            <input type="text" id="eventName" placeholder="Enter event name">
+        </div>
+
+        <div class="form-group">
+            <label>Event Type</label>
+            <select id="eventType">
+                <option value="">Select type</option>
+                <option>Sports</option>
+                <option>Concert</option>
+                <option>Seminar</option>
+                <option>Workshop</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Total Seats</label>
+            <input type="number" id="totalSeats" placeholder="Enter total seats">
+        </div>
+
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" id="location" placeholder="Enter event location">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea id="description" rows="3" placeholder="Enter event description"></textarea>
+        </div>
+
+        <button onclick="addEvent()" class="add-btn">Add Event</button>
+
+        <div class="event-list" id="eventList">
+            <br>
+            <hr>
+            <h2>Recently Added</h2>
+        </div>
+    </div>
+
+    <script>
+        function addEvent() {
+            let name = document.getElementById("eventName").value;
+            let type = document.getElementById("eventType").value;
+            let seats = document.getElementById("totalSeats").value;
+            let location = document.getElementById("location").value;
+            let description = document.getElementById("description").value;
+
+            if (!name || !type || !seats || !location || !description) {
+                alert("Please fill all fields!");
+                return;
+            }
+
+            let eventCard = document.createElement("div");
+            eventCard.className = "event-card";
+
+            eventCard.innerHTML = `
+                    <h3>${name}</h3>
+                    <p><strong>Type:</strong> ${type}</p>
+                    <p><strong>Total Seats:</strong> ${seats}</p>
+                    <p><strong>Location:</strong> ${location}</p>
+                    <p><strong>Description:</strong> ${description}</p>
+                `;
+
+            document.getElementById("eventList").appendChild(eventCard);
+
+            // Clear inputs
+            document.getElementById("eventName").value = "";
+            document.getElementById("eventType").value = "";
+            document.getElementById("totalSeats").value = "";
+            document.getElementById("location").value = "";
+            document.getElementById("description").value = "";
+        }
+    </script>
+
+</body>
+</html>

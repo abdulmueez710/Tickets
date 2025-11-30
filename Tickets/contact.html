@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EventHub</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <span class="logo"><a href="Home.html">Tickets</a></span>
+
+        <!--Navigation List-->
+        <ul class="navlist">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="eventList.html">Events</a></li>
+            <li><a href="addEvent.html">Add Event</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="Search events..." />
+
+        <!--Drop Down Menu-->
+        <div id="list" class="fa-solid fa-list">
+            <div class="dropdown">
+                <a href="Profile.html">Profile</a>
+                <a href="#">Setting</a>
+            </div>
+        </div>
+        <style>
+            .navbar {
+                background-color: black;
+                color: white;
+                display: flex;
+                border-radius: 40px;
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+                position: fixed;
+                top: 5px;
+                width: 98%;
+                z-index: 5;
+            }
+
+            .logo {
+                margin-right: auto;
+                padding: 7px 20px 7px 20px;
+            }
+
+                .logo a {
+                    color: navajowhite;
+                    text-decoration: none;
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+            .navlist {
+                list-style-type: none;
+                margin: auto;
+                padding: 0;
+                display: inline-flex;
+                overflow: hidden;
+                gap: 20px;
+                background-color: #ae23d4;
+                border-radius: 40px;
+            }
+
+                .navlist li a {
+                    color: white;
+                    padding: 5px 5px;
+                    text-decoration: none;
+                    display: block;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                    .navlist li a:hover {
+                        background-color: azure;
+                        color: black;
+                        border-radius: 40px;
+                    }
+
+            #search {
+                text-align: center;
+                margin-left: auto;
+                padding: 7px 20px 7px 20px;
+                border-radius: 40px;
+            }
+
+            #list {
+                position: relative;
+                background-color: rgb(8, 8, 8);
+                color: white;
+                padding: 10px 17px 5px 17px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                border-radius: 40%;
+            }
+
+                #list:hover {
+                    background-color: azure;
+                    color: rgb(8, 8, 8);
+                }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 100%;
+                background-color: aqua;
+                min-width: 100px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+                z-index: 1;
+            }
+
+            #list:hover .dropdown {
+                display: block;
+                background-color: antiquewhite;
+            }
+
+            .dropdown a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                font-weight: 400;
+            }
+
+                .dropdown a:hover {
+                    background-color: azure;
+                }
+        </style>
+    </nav>
+   
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>Have questions? We're here to help!</p>
+    </div>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Send Message</h2>
+            <div class="alert" id="alert">Message sent successfully!</div>
+            <form id="contactForm">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" id="phone">
+                </div>
+
+                <div class="input-group">
+                    <label>Subject</label>
+                    <select id="subject" required>
+                        <option value="">Choose...</option>
+                        <option value="tickets">Ticket Question</option>
+                        <option value="organizer">Event Organizer</option>
+                        <option value="support">Support</option>
+                        <option value="refund">Refund</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <h2>Contact Info</h2>
+            <div class="contact-box">
+                <h3>Email</h3>
+                <p>support@eventhub.com<br>info@eventhub.com</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Phone</h3>
+                <p>+92 41 1234567<br>Available: Mon-Fri, 9 AM - 6 PM</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Address</h3>
+                <p>123, Looney Wala<br>Faisalabad, Pakistan</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Working Hours</h3>
+                <p>Monday - Friday: 9 AM - 6 PM<br>Saturday: 10 AM - 4 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div class="social-media">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">TW</a>
+                    <a href="#">IG</a>
+                    <a href="#">LI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

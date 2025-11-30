@@ -1,0 +1,529 @@
+﻿* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    /*    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment : fixed;
+    min-height: 100px;*/
+    background-color: #F3F4F6;
+}
+
+/*----------------------Navigation Bar------------------*/
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    border-radius: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    position : fixed;
+    top : 5px;
+    width : 98%;
+    z-index : 5;
+}
+.logo {
+    margin-right: auto;
+    padding: 7px 20px 7px 20px;
+}
+    .logo a {
+        color: navajowhite;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.navlist {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: inline-flex;
+    overflow: hidden;
+    gap: 20px;
+    background-color: #ae23d4;
+    border-radius: 40px;
+}
+    .navlist li a {
+        color: white;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+        .navlist li a:hover {
+            background-color: azure;
+            color: black;
+            border-radius : 40px;
+        }
+#search {
+    text-align: center;
+    margin-left: auto;
+    padding: 7px 20px 7px 20px;
+    border-radius: 40px;
+}
+
+#list {
+    position: relative;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    padding: 10px 17px 5px 17px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40%;
+}
+    #list:hover {
+        background-color: azure;
+        color: rgb(8, 8, 8);
+    }
+.dropdown {
+    display: none;
+    position: absolute;
+    right : 0;
+    top : 100%;
+    background-color: aqua;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    z-index : 1;
+}
+#list:hover .dropdown {
+    display: block;
+    background-color: antiquewhite;
+}
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display : block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight : 400;
+}
+    .dropdown a:hover {
+        background-color : azure;
+    }
+
+    /*Body*/
+.homeBox {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 70px auto; 
+    min-height: 400px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 20px;
+    color: white;
+}
+.textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+    .textContent p {
+        margin: 0;
+        max-width: 80%;
+        overflow: auto;
+        color: white;
+    }
+
+.homeBox img {
+    position: relative;
+    width: auto;
+    max-width: 40%; 
+    height: auto;
+    border-radius: 10%;
+    margin-right: 0;
+}
+.options {
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 50px auto; 
+    gap: 20px;
+}
+
+    .options div {
+        background-color: rgb(154, 223, 233);
+        border-radius: 20px;
+        width: 160px;
+        height: 190px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+        .options div:hover {
+            background-color: azure;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+        .options div img {
+            height: auto;
+            width: 110px;
+            margin-top: 10px;
+        }
+        .options div p {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+.about {
+    position: relative; 
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; 
+}
+    .about p {
+        margin: 0;
+        padding: 0;
+        max-width: 600px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+/*---------------Profile-----------------*/
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Makes it full screen height */
+    padding-top: 60px; /* Space for the navbar */
+}
+
+.auth-box {
+    background-color: rgba(250, 235, 215, 0.4); /* Matches your theme */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 350px; /* Fixed width for a nice look */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.input-field {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.action-btn {
+    background-color: rgb(214, 83, 144); /* Your Pink Theme */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+    .action-btn:hover {
+        background-color: rgb(180, 60, 120);
+    }
+
+.logout-btn {
+    background-color: #ff4d4d; /* Red for logout */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.switch-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+}
+
+    .switch-text span {
+        color: rgb(214, 83, 144);
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+.info-list {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+
+
+
+/*---------------Add Event----------------*/
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    max-width: 700px;
+    margin: 120px auto 50px auto; 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+    .form-container h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-sizing: border-box; 
+        font-size: 16px;
+    }
+
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(214, 83, 144); 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .add-btn:hover {
+        background-color: rgb(180, 60, 120);
+    }
+
+
+.event-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/*----------Event List--------------*/
+
+
+
+.event-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50px;
+}
+
+.event-card {
+    background: rgb(154, 223, 233);
+    color: black;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+    .event-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .event-card h2 {
+        margin: 10px 0;
+    }
+
+    .event-card p {
+        padding: 0 15px;
+    }
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 15px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .btn:hover {
+        background: #555;
+    }
+
+
+    /*------------Contact------------*/
+    /** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}*/
+
+.header {
+    background: linear-gradient(to right, #d946ef, #a855f7);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top : 70px;
+    border-radius: 5px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.form-section, .info-section {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    color: #d946ef;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+.container input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.container textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #d946ef, #a855f7);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-box {
+    background: #fafafa;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-left: 3px solid #d946ef;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(to right, #d946ef, #a855f7);
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    text-decoration: none;
+}

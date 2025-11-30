@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <link rel="StyleSheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <span class="logo"><a href="Home.html">Tickets</a></span>
+
+        <!--Navigation List-->
+        <ul class="navlist">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="eventList.html">Events</a></li>
+            <li><a href="addEvent.html">Add Event</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="Search events..." />
+
+        <!--Drop Down Menu-->
+        <div id="list" class="fa-solid fa-list">
+            <div class="dropdown">
+                <a href="#">Profile</a>
+                <a href="#">Setting</a>
+            </div>
+        </div>
+    </nav>
+
+        <div class="main-container">
+
+            <div class="auth-box" id="loginBox">
+                <h2>Welcome Back</h2>
+                <p>Please login First to proceed</p>
+
+                <input type="text" placeholder="Username" class="input-field" />
+                <input type="password" placeholder="Password" class="input-field" />
+
+                <button onclick="login()" class="action-btn">Login</button>
+
+                <p class="switch-text">
+                    Don't have an account? <span onclick="showSignUp()">Sign Up</span>
+                </p>
+            </div>
+
+            <div class="auth-box hidden" id="signupBox">
+                <h2>Create Account</h2>
+                <p>Join us to book your first event!</p>
+
+                <input type="text" placeholder="Full Name" class="input-field" />
+                <input type="email" placeholder="Email Address" class="input-field" />
+                <input type="password" placeholder="Create Password" class="input-field" />
+
+                <button onclick="signup()" class="action-btn">Sign Up</button>
+
+                <p class="switch-text">
+                    Already have an account? <span onclick="showLogin()">Login</span>
+                </p>
+            </div>
+
+            <div class="auth-box hidden" id="profileBox">
+                <div class="profile-pic">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User Icon">
+                </div>
+
+                <h2 id="userNameDisplay">John Doe</h2>
+                <p class="role">Member</p>
+
+                <div class="info-list">
+                    <p><strong>Status:</strong> Active</p>
+                    <p><strong>Member Since:</strong> 2025</p>
+                </div>
+
+                <button onclick="logout()" class="logout-btn">Log Out</button>
+            </div>
+
+        </div>
+
+        <script src="JavaScript.js"></script>  
+</body>
+</html>

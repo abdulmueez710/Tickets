@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seat Reservation</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            /*    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment : fixed;
+    min-height: 100px;*/
+            background-color: #F3F4F6;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .screen {
+            background: #444;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .seats {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 10px;
+            justify-items: center;
+            margin-bottom: 25px;
+        }
+
+        .seat {
+            width: 32px;
+            height: 32px;
+            background: #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .seat:hover {
+                background: #bbb;
+            }
+
+            .seat.selected {
+                background: #28a745;
+            }
+
+            .seat.booked {
+                background: #d9534f;
+                cursor: not-allowed;
+            }
+
+    .button {
+        margin-left : 36%;
+    }
+
+        .btn {
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .btn:hover {
+                background: #0056b3;
+            }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <span class="logo"><a href="Home.html">Tickets</a></span>
+
+        <!--Navigation List-->
+        <ul class="navlist">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="eventList.html">Events</a></li>
+            <li><a href="addEvent.html">Add Event</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="Search events..." />
+
+        <!--Drop Down Menu-->
+        <div id="list" class="fa-solid fa-list">
+            <div class="dropdown">
+                <a href="Profile.html">Profile</a>
+                <a href="#">Setting</a>
+            </div>
+        </div><br />
+
+        <style>
+            .navbar {
+                background-color: black;
+                color: white;
+                display: flex;
+                border-radius: 40px;
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+                position: fixed;
+                width: 98%;
+                z-index: 5;
+            }
+
+            .logo {
+                margin-right: auto;
+                padding: 7px 20px 7px 20px;
+            }
+
+                .logo a {
+                    color: navajowhite;
+                    text-decoration: none;
+                    text-align: center;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+            .navlist {
+                list-style-type: none;
+                margin: auto;
+                padding: 0;
+                display: inline-flex;
+                overflow: hidden;
+                gap: 20px;
+                background-color: #ae23d4;
+                border-radius: 40px;
+            }
+
+                .navlist li a {
+                    color: white;
+                    padding: 5px 5px;
+                    text-decoration: none;
+                    display: block;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                    .navlist li a:hover {
+                        background-color: azure;
+                        color: black;
+                        border-radius: 40px;
+                    }
+
+            #search {
+                text-align: center;
+                margin-left: auto;
+                padding: 7px 20px 7px 20px;
+                border-radius: 40px;
+            }
+
+            #list {
+                position: relative;
+                background-color: rgb(8, 8, 8);
+                color: white;
+                padding: 10px 17px 5px 17px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                border-radius: 40%;
+            }
+
+                #list:hover {
+                    background-color: azure;
+                    color: rgb(8, 8, 8);
+                }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 100%;
+                background-color: aqua;
+                min-width: 100px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+                z-index: 1;
+            }
+
+            #list:hover .dropdown {
+                display: block;
+                background-color: antiquewhite;
+            }
+
+            .dropdown a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                font-weight: 400;
+            }
+
+                .dropdown a:hover {
+                    background-color: azure;
+                }
+        </style>
+    </nav><br />
+
+
+    <div class="container">
+        <h2>Select Your Seats</h2>
+
+        <div class="screen">Stage / Screen</div>
+
+        <div class="seats" id="seatContainer"></div>
+  <div class="button">
+        <button class="btn" onclick="confirmReservation()">Confirm Reservation</button>
+
+        <div id="result" class="result"></div><br />
+  </div>
+  </div>
+
+    <script src="JavaScript.js"></script>
+
+</body>
+</html>
