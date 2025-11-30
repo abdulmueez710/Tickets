@@ -8,6 +8,15 @@ const signupBox = document.getElementById("signupBox");
 const profileBox = document.getElementById("profileBox");
 const userDisplay = document.getElementById("userNameDisplay");
 
+//let username = document.getElementsByClassName("").value;
+
+//function validation() {
+//    if (username == "") {
+//        alert.log("Please input all fields");
+//        return false;
+//    }
+//}
+
 function showSignUp() {
     if (loginBox && signupBox) {
         loginBox.classList.add("hidden");
