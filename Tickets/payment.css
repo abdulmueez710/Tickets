@@ -103,7 +103,7 @@ select {
 .pay-button {
     width: 100%;
     padding: 12px;
-    background-color: var(--color-secondary);
+    background-color: #333;
     color: var(--color-white);
     border: none;
     border-radius: var(--border-radius);
@@ -115,7 +115,7 @@ select {
 }
 
     .pay-button:hover {
-        background-color: #2980b9;
+        background-color: #555;
     }
 
 #successMessage {

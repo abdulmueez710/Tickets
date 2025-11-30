@@ -218,17 +218,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Makes it full screen height */
-    padding-top: 60px; /* Space for the navbar */
+    min-height: 100vh; 
+    padding-top: 60px; 
 }
 
 .auth-box {
-    background-color: rgba(250, 235, 215, 0.4); /* Matches your theme */
+    background-color: rgba(250, 235, 215, 0.4); 
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
     padding: 40px;
-    width: 350px; /* Fixed width for a nice look */
+    width: 350px; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -248,7 +248,7 @@ body {
 }
 
 .action-btn {
-    background-color: rgb(214, 83, 144); /* Your Pink Theme */
+    background-color: #333; 
     color: white;
     padding: 12px;
     border: none;
@@ -260,17 +260,20 @@ body {
 }
 
     .action-btn:hover {
-        background-color: rgb(180, 60, 120);
+        background-color: #555;
     }
 
 .logout-btn {
-    background-color: #ff4d4d; /* Red for logout */
+    background-color: #333; 
     color: white;
     padding: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
+}
+.logout-btn:hover {
+    background : #555;
 }
 
 .switch-text {
@@ -348,7 +351,7 @@ body {
 .add-btn {
     width: 100%;
     padding: 12px;
-    background-color: rgb(214, 83, 144); 
+    background-color: #333; 
     color: white;
     border: none;
     border-radius: 10px;
@@ -358,7 +361,7 @@ body {
 }
 
     .add-btn:hover {
-        background-color: rgb(180, 60, 120);
+        background-color: #555;
     }
 
 
@@ -499,7 +502,7 @@ body {
 }
 
 .submit-btn {
-    background: linear-gradient(to right, #d946ef, #a855f7);
+    background: #333;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -508,6 +511,9 @@ body {
     font-size: 16px;
     width: 100%;
     margin-top: 10px;
+}
+.submit-btn:hover {
+    background : #555;
 }
 
 .contact-box {

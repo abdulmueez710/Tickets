@@ -2,60 +2,77 @@
 
 /*-------------Login Page-----------------------*/
 
-
 const loginBox = document.getElementById("loginBox");
 const signupBox = document.getElementById("signupBox");
 const profileBox = document.getElementById("profileBox");
 const userDisplay = document.getElementById("userNameDisplay");
 
-//let username = document.getElementsByClassName("").value;
-
-//function validation() {
-//    if (username == "") {
-//        alert.log("Please input all fields");
-//        return false;
-//    }
-//}
-
 function showSignUp() {
-    if (loginBox && signupBox) {
-        loginBox.classList.add("hidden");
-        signupBox.classList.remove("hidden");
-    }
+    loginBox.classList.add("hidden");
+    signupBox.classList.remove("hidden");
 }
 
 function showLogin() {
-    if (loginBox && signupBox) {
-        signupBox.classList.add("hidden");
-        loginBox.classList.remove("hidden");
-    }
-}
-
-function login() {
-    if (loginBox && profileBox) {
-        loginBox.classList.add("hidden");
-        profileBox.classList.remove("hidden");
-    }
-}
-
-function signup() {
-    if (signupBox && profileBox) {
-        signupBox.classList.add("hidden");
-        profileBox.classList.remove("hidden");
-
-        if (userDisplay) {
-            userDisplay.innerText = "New User";
-        }
-
-        alert("Account Created Successfully!");
-    }
+    signupBox.classList.add("hidden");
+    profileBox.classList.add("hidden");
+    loginBox.classList.remove("hidden");
 }
 
 function logout() {
-    if (profileBox && loginBox) {
-        profileBox.classList.add("hidden");
-        loginBox.classList.remove("hidden");
+    profileBox.classList.add("hidden");
+    loginBox.classList.remove("hidden");
+
+    const allInputs = document.querySelectorAll("input");
+    for (let i = 0; i < allInputs.length; i++) {
+        allInputs[i].value = "";
     }
+}
+
+// --- VALIDATION LOGIC ---
+
+function login() {
+    const usernameInput = loginBox.querySelector('input[type="text"]');
+    const passwordInput = loginBox.querySelector('input[type="password"]');
+
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+
+    if (username === "" || password === "") {
+        alert("Please fill in all fields!");
+        return false; 
+    }
+
+    if (password.length <= 6) {
+        alert("Password must be more than 6 characters!");
+        return false; 
+    }
+
+    userDisplay.innerText = username; 
+    loginBox.classList.add("hidden");
+    profileBox.classList.remove("hidden");
+}
+
+function signup() {
+    const nameInput = signupBox.querySelector('input[type="text"]');
+    const emailInput = signupBox.querySelector('input[type="email"]');
+    const passwordInput = signupBox.querySelector('input[type="password"]');
+
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const password = passwordInput.value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill in all fields!");
+        return;
+    }
+
+    if (password.length <= 6) {
+        alert("Password must be more than 6 characters!");
+        return;
+    }
+
+    alert("Account Created Successfully!");
+    showLogin();           // Go back to login screen
 }
 
 
