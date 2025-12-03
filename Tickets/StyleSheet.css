@@ -19,19 +19,19 @@ body {
     position: fixed;
     top: 5px;
     width: 98%;
-    left: 1%;
-    z-index: 1000;
+    z-index: 5;
 }
 
 .logo {
     margin-right: auto;
-    padding: 7px 20px;
+    padding: 7px 20px 7px 20px;
 }
 
     .logo a {
         color: navajowhite;
         text-decoration: none;
-        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
 .navlist {
@@ -39,6 +39,7 @@ body {
     margin: auto;
     padding: 0;
     display: inline-flex;
+    overflow: hidden;
     gap: 20px;
     background-color: #ae23d4;
     border-radius: 40px;
@@ -46,9 +47,13 @@ body {
 
     .navlist li a {
         color: white;
-        padding: 10px 15px;
+        padding: 5px 5px;
         text-decoration: none;
         display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
         .navlist li a:hover {
@@ -59,27 +64,26 @@ body {
 
 #search {
     text-align: center;
-    margin: auto 10px auto auto;
-    padding: 7px 20px;
+    margin-left: auto;
+    padding: 7px 20px 7px 20px;
     border-radius: 40px;
-    border: none;
 }
 
 #list {
+    position: relative;
     background-color: rgb(8, 8, 8);
     color: white;
-    padding: 10px 17px;
-    margin: auto 10px;
+    padding: 5px 17px 5px 17px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
     #list:hover {
         background-color: azure;
         color: rgb(8, 8, 8);
     }
-
 /* ------- HOME PAGE-------- */
 .homeBox {
     background-image: url("bg.jpg");
