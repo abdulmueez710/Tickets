@@ -4,6 +4,12 @@
 }
 
 body {
+    /*    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment : fixed;
+    min-height: 100px;*/
     background-color: #F3F4F6;
     margin: 0;
     padding: 0;
@@ -325,6 +331,19 @@ body {
 }
 
 /* --- CONTACT PAGE --- */
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}*/
+
 .contact-header {
     background: linear-gradient(to right, #d946ef, #a855f7);/**/
     color: white;
