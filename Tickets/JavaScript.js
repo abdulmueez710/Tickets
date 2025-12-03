@@ -1,4 +1,3 @@
-﻿/*-- 1.---(Login/Signup/Nav)-----*/
 function showSignUp() {
     document.getElementById("loginBox").classList.add("hidden");
     document.getElementById("signupBox").classList.remove("hidden");
@@ -39,47 +38,32 @@ function signup() {
     showLogin();
 }
 
-
-/* 2. DATA & EVENT LIST LOGIC */
-
 const eventsDB = [
-    // Concerts
     { name: "Music Concert", type: "Concert", img: "music_concert.png", desc: "A night of rock and pop music." },
     { name: "Jazz Night", type: "Concert", img: "jazzNight.png", desc: "Smooth jazz vibes downtown." },
     { name: "Summer Fest", type: "Concert", img: "summerFestival.png", desc: "The biggest outdoor festival." },
-
-    // Cinema
     { name: "Wednesday", type: "Cinema", img: "wednesday.jpg", desc: "Horror comedy series screening." },
     { name: "Action Hero", type: "Cinema", img: "actionHero.png", desc: "Premiere of the new blockbuster." },
     { name: "Indie Film", type: "Cinema", img: "indieFilm.png", desc: "Award-winning independent movie." },
-
-    // Drama
     { name: "Shakespeare Live", type: "Drama", img: "shakespaeareLive.png", desc: "A classic retelling of Hamlet." },
     { name: "Modern Theater", type: "Drama", img: "modernTheater.png", desc: "Contemporary arts performance." },
-
-    // Tech/Other
     { name: "Tech Conference", type: "Seminar", img: "tech_expo.png", desc: "Future tech trends expo." },
     { name: "Art Exhibition", type: "Workshop", img: "art_festival .png", desc: "Modern art gallery showcase." }
 ];
 
-// --- B. FUNCTION CALLED FROM HOME PAGE ---
 function filterCategory(category) {
     localStorage.setItem("selectedFilter", category);
     window.location.href = "eventList.html";
 }
 
-// --- C. FUNCTION TO LOAD EVENTS ON THE LIST PAGE ---
 function loadEvents() {
     const container = document.getElementById("eventContainer");
-    if (!container) return; // Stop if we aren't on eventList.html
+    if (!container) return;
 
-    // Get the saved filter (or default to 'All')
     const filter = localStorage.getItem("selectedFilter") || "All";
 
-    // Clear the container first
     container.innerHTML = "";
 
-    // Show a Reset Button if a filter is active
     const header = document.getElementById("listHeader");
     if (filter !== "All") {
         header.innerHTML = `Showing: <span style="color:#ae23d4">${filter}</span> 
@@ -88,12 +72,9 @@ function loadEvents() {
         header.innerHTML = "All Upcoming Events";
     }
 
-    // Loop through our Database
     eventsDB.forEach(event => {
-        // If filter is 'All', show everything. If not, match the type.
         if (filter === "All" || event.type === filter) {
 
-            // Create the card HTML dynamically
             const card = document.createElement("div");
             card.className = "event-card";
             card.innerHTML = `
@@ -109,10 +90,9 @@ function loadEvents() {
 
 function resetFilter() {
     localStorage.setItem("selectedFilter", "All");
-    location.reload(); // Refresh to show all
+    location.reload();
 }
 
-// --- D. VIEW DETAILS (Links to Detail Page) ---
 function viewDetails(name, image, type) {
     localStorage.setItem("currentEventName", name);
     localStorage.setItem("currentEventImage", image);
@@ -120,15 +100,10 @@ function viewDetails(name, image, type) {
     window.location.href = "eventDetails.html";
 }
 
-// Run loadEvents only if we are on the page
 if (document.getElementById("eventContainer")) {
     window.onload = loadEvents;
 }
 
-
-/* =========================================
-   3. EVENT DETAILS PAGE LOGIC
-   ========================================= */
 if (document.getElementById("detailsContainer")) {
 
     const eventName = localStorage.getItem("currentEventName") || "Event";
@@ -156,10 +131,6 @@ if (document.getElementById("detailsContainer")) {
     };
 }
 
-
-/* =========================================
-   4. SEAT RESERVATION LOGIC
-   ========================================= */
 const seatContainer = document.getElementById("seatContainer");
 
 if (seatContainer) {
@@ -209,10 +180,6 @@ if (seatContainer) {
     }
 }
 
-
-/* =========================================
-   5. PAYMENT PAGE LOGIC
-   ========================================= */
 const paymentForm = document.getElementById("paymentForm");
 if (paymentForm) {
     const eventName = localStorage.getItem("currentEventName") || "Event";
@@ -235,4 +202,5 @@ if (paymentForm) {
         paymentForm.style.display = "none";
         document.getElementById("successMessage").style.display = "block";
     });
+
 }
