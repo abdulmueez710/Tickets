@@ -10,76 +10,28 @@
 </head>
 <body>
 
-    <!--Navigation Bar-->
     <nav class="navbar">
         <span class="logo"><a href="Home.html">TickWizard</a></span>
-
-        <!--Navigation List-->
         <ul class="navlist">
             <li><a href="Home.html">Home</a></li>
-            <li><a href="eventList.html">Events</a></li>
+            <!-- Clicking "Events" resets the filter to show ALL -->
+            <li><a href="eventList.html" onclick="localStorage.setItem('selectedFilter', 'All')">Events</a></li>
             <li><a href="addEvent.html">Add Event</a></li>
             <li><a href="contact.html">Contacts</a></li>
         </ul>
         <input type="text" id="search" placeholder="Search events..." />
-
-        <!--Drop Down Menu-->
         <a id="list" href="Profile.html"><i class="fa-notdog fa-solid fa-user"></i></a>
-
     </nav>
 
+    <!-- Header that JS changes based on filter -->
+    <h1 id="listHeader" style="text-align: center; margin-top: 100px; color: #333;">All Upcoming Events</h1>
 
-    <div class="event-container">
-
-        <!-- Event 1: Concert -->
-        <div class="event-card">
-            <img src="music_concert.png" alt="Music Concert">
-            <h2>Music Concert</h2>
-            <p>Join us for an exciting night of live music performances.</p>
-            <!-- Pass 'Concert' as the type -->
-            <a href="#" onclick="viewDetails('Music Concert', 'music_concert.png', 'Concert')" class="btn">Learn More</a>
-        </div>
-
-        <!-- Event 2: Tech -->
-        <div class="event-card">
-            <img src="tech_expo.png" alt="Tech Conference">
-            <h2>Tech Conference</h2>
-            <p>Explore the future of technology with industry leaders.</p>
-            <!-- Pass 'Conference' as the type -->
-            <a href="#" onclick="viewDetails('Tech Conference', 'tech_expo.png', 'Conference')" class="btn">Learn More</a>
-        </div>
-
-        <!-- Event 3: Art -->
-        <div class="event-card">
-            <img src="art_festival .png" alt="Art Exhibition">
-            <h2>Art Exhibition</h2>
-            <p>A beautiful display of modern and classical artworks.</p>
-            <!-- Pass 'Exhibition' as the type -->
-            <a href="#" onclick="viewDetails('Art Exhibition', 'art_festival .png', 'Exhibition')" class="btn">Learn More</a>
-        </div>
-
-        <!-- Event 4: Wednesday -->
-        <div class="event-card">
-            <img src="wednesday.jpg" alt="wednesday">
-            <h2>Wednesday</h2>
-            <p>An American comedy horror television series.</p>
-            <!-- Pass 'Show' as the type -->
-            <a href="#" onclick="viewDetails('Wednesday', 'wednesday.jpg', 'Show')" class="btn">Learn More</a>
-        </div>
+    <!-- Empty Container: JavaScript fills this automatically -->
+    <div class="event-container" id="eventContainer">
+        <!-- Events will appear here -->
     </div>
 
-    <!-- SIMPLE JAVASCRIPT to Handle Click -->
-    <script>
-        function viewDetails(name, image, type) {
-            // Save the details of the clicked event into the browser's memory (LocalStorage)
-            localStorage.setItem("currentEventName", name);
-            localStorage.setItem("currentEventImage", image);
-            localStorage.setItem("currentEventType", type);
-
-            // Go to the new page
-            window.location.href = "eventDetails.html";
-        }
-    </script>
+    <script src="JavaScript.js"></script>
 
 </body>
 </html>

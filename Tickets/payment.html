@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Details</title>
-    <link rel="stylesheet" href="payment.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!--Navigation Bar-->
+
     <nav class="navbar">
         <span class="logo"><a href="Home.html">TickWizard</a></span>
-
-        <!--Navigation List-->
         <ul class="navlist">
             <li><a href="Home.html">Home</a></li>
             <li><a href="eventList.html">Events</a></li>
@@ -21,130 +18,60 @@
             <li><a href="contact.html">Contacts</a></li>
         </ul>
         <input type="text" id="search" placeholder="Search events..." />
-
-        <!--Drop Down Menu-->
         <a id="list" href="Profile.html"><i class="fa-notdog fa-solid fa-user"></i></a>
-        <style>
-            .navbar {
-                background-color: black;
-                color: white;
-                display: flex;
-                border-radius: 40px;
-                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-                position: fixed;
-                top: 5px;
-                width: 98%;
-                z-index: 5;
-            }
-
-            .logo {
-                margin-right: auto;
-                padding: 7px 20px 7px 20px;
-            }
-
-                .logo a {
-                    color: navajowhite;
-                    text-decoration: none;
-                    text-align: center;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
-
-            .navlist {
-                list-style-type: none;
-                margin: auto;
-                padding: 0;
-                display: inline-flex;
-                overflow: hidden;
-                gap: 20px;
-                background-color: #ae23d4;
-                border-radius: 40px;
-            }
-
-                .navlist li a {
-                    color: white;
-                    padding: 5px 5px;
-                    text-decoration: none;
-                    display: block;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    text-align: center;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-
-                    .navlist li a:hover {
-                        background-color: azure;
-                        color: black;
-                        border-radius: 40px;
-                    }
-
-            #search {
-                text-align: center;
-                margin-left: auto;
-                border-radius: 40px;
-                margin-block: auto;
-                padding: 7px 20px 7px 20px;
-                border-radius: 40px;
-                max-width : fit-content;
-            }
-
-            #list {
-                position: relative;
-                background-color: rgb(8, 8, 8);
-                color: white;
-                padding: 9px 17px 5px 17px;
-                font-size: 16px;
-                border: none;
-                cursor: pointer;
-                border-radius: 40%;
-            }
-
-                #list:hover {
-                    background-color: azure;
-                    color: rgb(8, 8, 8);
-                }
-        </style>
     </nav>
-   
-    <div class="payment-container">
-        <div class="header">
-            <h1>Payment Details</h1>
-        </div>
 
-        <div class="ticket-info">
-            <p><strong>Event:</strong> Concert Ticket</p>
-            <p><strong>Total:</strong> $120.00</p>
-        </div>
-
-        <form id="paymentForm">
-            <label>Full Name</label>
-            <input type="text" id="fullName" placeholder="John Doe">
-
-            <label>Email</label>
-            <input type="email" id="email" placeholder="john@example.com">
-
-            <label>Card Number</label>
-            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
-
-            <div class="row">
-                <div class="half-width">
-                    <label>Expiry</label>
-                    <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
-                </div>
-                <div class="half-width">
-                    <label>CVV</label>
-                    <input type="text" id="cvv" placeholder="123" maxlength="3">
-                </div>
+    <div class="payment-wrapper">
+        <div class="payment-card">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1>Payment Details</h1>
             </div>
 
-            <button type="submit" class="pay-button">Pay Now</button>
-        </form>
+            <!-- SUMMARY SECTION (Added as requested) -->
+            <div class="ticket-summary">
+                <p><strong>Event:</strong> <span id="payEventName">Loading...</span></p>
+                <p><strong>Seats:</strong> <span id="paySeatCount">0</span></p>
+                <p style="font-size: 1.2em; color: #28a745;"><strong>Total:</strong> <span id="payTotal">$0</span></p>
+            </div>
 
-        <div id="successMessage">
-            <h2>Success!</h2>
-            <p>Payment Successful. Thank you!</p>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                </div>
+
+                <div class="pay-row">
+                    <div style="flex:1">
+                        <label style="font-weight:bold; display:block; margin-bottom:5px;">Expiry</label>
+                        <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div style="flex:1">
+                        <label style="font-weight:bold; display:block; margin-bottom:5px;">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" maxlength="3">
+                    </div>
+                </div>
+
+                <button type="submit" class="pay-button">Pay Now</button>
+            </form>
+
+            <div id="successMessage">
+                <h2>Success!</h2>
+                <p>Payment Successful. See you at the event!</p>
+                <p><a href="Home.html">Return to Home</a></p>
+            </div>
         </div>
     </div>
 
-    <script src="payment.js"></script>
+    <script src="JavaScript.js"></script>
 </body>
 </html>

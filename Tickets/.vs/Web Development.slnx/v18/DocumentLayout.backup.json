@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\eventlist.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:eventlist.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|c:\\users\\hp\\source\\web development\\tickets\\tickets\\tickets\\seatreserve.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:seatreserve.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,19 +27,11 @@
       "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|c:\\users\\hp\\source\\web development\\tickets\\tickets\\tickets\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\payment.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:payment.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\eventlist.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:eventlist.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|c:\\users\\hp\\source\\web development\\tickets\\tickets\\tickets\\eventdetails.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\eventdetails.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:eventdetails.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -47,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:addevent.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\contact.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BD120C3B-C77C-389B-DB04-9771E226C967}|C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets|solutionrelative:contact.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "eventDetails.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\eventDetails.html",
               "RelativeDocumentMoniker": "eventDetails.html",
@@ -86,50 +86,50 @@
               "RelativeToolTip": "eventDetails.html",
               "ViewState": "AgIAAIwAAAAAAAAAAAAQwJcAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-02T16:52:09.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T16:52:09.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "seatReserve.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\seatReserve.html",
               "RelativeDocumentMoniker": "seatReserve.html",
               "ToolTip": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\seatReserve.html",
               "RelativeToolTip": "seatReserve.html",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAkwMwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAkwM4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-12-02T16:17:44.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Home.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\Home.html",
               "RelativeDocumentMoniker": "Home.html",
               "ToolTip": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\Home.html",
               "RelativeToolTip": "Home.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-02T16:09:24.988Z"
+              "WhenOpened": "2025-12-02T16:09:24.988Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "eventList.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\eventList.html",
               "RelativeDocumentMoniker": "eventList.html",
               "ToolTip": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\eventList.html",
               "RelativeToolTip": "eventList.html",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwEcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwCQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-12-02T16:09:23.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "addEvent.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\addEvent.html",
               "RelativeDocumentMoniker": "addEvent.html",
@@ -141,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Profile.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\Profile.html",
               "RelativeDocumentMoniker": "Profile.html",
@@ -153,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "payment.js",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\payment.js",
               "RelativeDocumentMoniker": "payment.js",
@@ -165,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "payment.css",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\payment.css",
               "RelativeDocumentMoniker": "payment.css",
@@ -173,12 +173,11 @@
               "RelativeToolTip": "payment.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-02T13:36:51.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T13:36:51.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "payment.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\payment.html",
               "RelativeDocumentMoniker": "payment.html",
@@ -186,8 +185,7 @@
               "RelativeToolTip": "payment.html",
               "ViewState": "AgIAAHYAAAAAAAAAAAAkwIUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-02T11:44:56.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T11:44:56.69Z"
             },
             {
               "$type": "Document",
@@ -203,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "contact.html",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
@@ -215,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "StyleSheet.css",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\StyleSheet.css",
               "RelativeDocumentMoniker": "StyleSheet.css",
@@ -223,18 +221,17 @@
               "RelativeToolTip": "StyleSheet.css",
               "ViewState": "AgIAAN8BAAAAAAAAAAAmwP4BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-30T11:06:35.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:06:35.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "JavaScript.js",
               "DocumentMoniker": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\JavaScript.js",
               "RelativeDocumentMoniker": "JavaScript.js",
               "ToolTip": "C:\\Users\\hp\\source\\Web Development\\Tickets\\Tickets\\Tickets\\JavaScript.js",
               "RelativeToolTip": "JavaScript.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANgAAAAAAAAAAAAIwPQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-12-02T17:06:06.368Z",
               "EditorCaption": ""
