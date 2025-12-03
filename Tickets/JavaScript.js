@@ -45,17 +45,17 @@ function signup() {
 const eventsDB = [
     // Concerts
     { name: "Music Concert", type: "Concert", img: "music_concert.png", desc: "A night of rock and pop music." },
-    { name: "Jazz Night", type: "Concert", img: "music_concert.png", desc: "Smooth jazz vibes downtown." },
-    { name: "Summer Fest", type: "Concert", img: "music_concert.png", desc: "The biggest outdoor festival." },
+    { name: "Jazz Night", type: "Concert", img: "jazzNight.png", desc: "Smooth jazz vibes downtown." },
+    { name: "Summer Fest", type: "Concert", img: "summerFestival.png", desc: "The biggest outdoor festival." },
 
     // Cinema
     { name: "Wednesday", type: "Cinema", img: "wednesday.jpg", desc: "Horror comedy series screening." },
-    { name: "Action Hero", type: "Cinema", img: "cinema.png", desc: "Premiere of the new blockbuster." },
-    { name: "Indie Film", type: "Cinema", img: "cinema.png", desc: "Award-winning independent movie." },
+    { name: "Action Hero", type: "Cinema", img: "actionHero.png", desc: "Premiere of the new blockbuster." },
+    { name: "Indie Film", type: "Cinema", img: "indieFilm.png", desc: "Award-winning independent movie." },
 
     // Drama
-    { name: "Shakespeare Live", type: "Drama", img: "drama.png", desc: "A classic retelling of Hamlet." },
-    { name: "Modern Theater", type: "Drama", img: "drama.png", desc: "Contemporary arts performance." },
+    { name: "Shakespeare Live", type: "Drama", img: "shakespaeareLive.png", desc: "A classic retelling of Hamlet." },
+    { name: "Modern Theater", type: "Drama", img: "modernTheater.png", desc: "Contemporary arts performance." },
 
     // Tech/Other
     { name: "Tech Conference", type: "Seminar", img: "tech_expo.png", desc: "Future tech trends expo." },
